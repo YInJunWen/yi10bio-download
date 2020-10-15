@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  font-size: 0.13rem;
+  width: 100%;
+  /* max-width: 375px; */
+  height: 100%;
+  margin: 0 auto;
+}
+
+.parcel {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+}
+
+.botBg {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5.5rem;
+  background: url('../images/botBg.png') no-repeat;
+  background-size: contain;
+}
+
+.logo {
+  z-index: 2;
+  position: absolute;
+  top: 0.8rem;
+  left: calc((100% - 2.6rem) / 2);
+  width: 2.6rem;
+  height: 2.6rem;
+  background: url('../images/logo.png') no-repeat;
+  background-size: contain;
+}
+
+.title {
+  z-index: 2;
+  position: absolute;
+  top: 4.94rem;
+  left: calc((100% - 4.66rem) / 2);
+  width: 4.66rem;
+  height: 0.53rem;
+  background: url('../images/title.png') no-repeat;
+  background-size: contain;
+}
+
+.subTitle1 {
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  top: 5.75rem;
+  left: 0;
+  text-align: center;
+  font-size: 0.26rem;
+  font-weight: 500;
+  color: #ff7a26;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.subTitle2 {
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  bottom: 1.28rem;
+  left: 0;
+  font-size: 0.34rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.subTitle3 {
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  font-size: 0.24rem;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.btnGroup {
+  width: 100%;
+  position: absolute;
+  bottom: 2.46rem;
+  left: 0;
+  padding: 0 0.6rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btnGroup .button {
+  z-index: 3;
+  width: 2.9rem;
+  height: 0.84rem;
+  border: 1px solid #f8f8f8;
+  border-radius: 1rem;
+  padding: 0 0.24rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btnGroup .button:last-child {
+  background: #fff;
+}
+
+.button img {
+  width: 0.44rem;
+  height: 0.56rem;
+}
+
+.button .desc {
+  font-size: 0.32rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.button .androidBtn {
+  color: #ff8230;
+}
