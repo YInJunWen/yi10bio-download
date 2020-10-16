@@ -6,13 +6,12 @@
     if (!clientWidth) return
 
     if (document.body.ontouchstart !== undefined) {
-      const isPad = new RegExp(/ipad/i).test(navigator.userAgent.toLowerCase())
       // mobile
+      const isPad = new RegExp(/ipad/i).test(navigator.userAgent.toLowerCase())
       docEl.style.fontSize = isPad ? '50px' : 100 * (clientWidth / 750) + 'px'
       // 判断是否是iPad
-      if (isPad) {
-        document.getElementById('app').style.cssText = `max-width: 375px;max-height: 667px;transform: scale(1.5);`
-      }
+      isPad &&
+        (document.getElementById('app').style.cssText = `max-width: 375px;max-height: 667px;transform: scale(1.5);`)
     } else {
       if (clientWidth >= 375) {
         docEl.style.fontSize = '50px'
