@@ -6,7 +6,7 @@
   "author": "yin <yinjwen@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack -c"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -26,5 +26,8 @@
     "url-loader": "^4.1.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "callapp-lib": "^3.1.3"
   }
 }
