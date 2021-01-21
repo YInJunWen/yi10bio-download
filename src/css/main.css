@@ -5,6 +5,7 @@
 
 html,
 body {
+  font-family: 'PingFangSC-Regular', 'Microsoft YaHei', Helvetica, sans-serif;
   width: 100%;
   height: 100%;
   background: #f8f8f8;
@@ -47,7 +48,7 @@ body {
 .logo {
   z-index: 2;
   position: absolute;
-  top: 0.8rem;
+  top: 1rem;
   left: calc((100% - 2.6rem) / 2);
   width: 2.6rem;
   height: 2.6rem;
@@ -131,6 +132,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .btnGroup .button:last-child {
@@ -150,4 +152,40 @@ body {
 
 .button .androidBtn {
   color: #ff8230;
+}
+
+#tips {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 0.32rem;
+}
+
+.tipsContent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%;
+  color: rgb(51, 51, 51);
+  display: table;
+  z-index: 100;
+}
+
+.popup-inner {
+  display: inline-block;
+  text-align: justify;
+  padding: 0.5em 1em;
+  max-width: 80%;
+  background: rgb(255, 193, 154);
+  color: #f97018;
+  border: 2px solid #ddd;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
 }
